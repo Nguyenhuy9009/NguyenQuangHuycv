@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Web cá nhân của tôi</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <section id="header">
+            <img class="logo" src="img/logoH.jpg">
+            <button class="btnHeader" onclick="Openpage('about')" id="show">about</button>
+            <button class="btnHeader" onclick="Openpage('featured')">my cv</button>
+            <button class="btnHeader" onclick="Openpage('portfolio')">portfolio</button>
+            <button class="btnHeader" onclick="Openpage('blog')">blog</button>
+            <button class="btnHeader" onclick="Openpage('contact')">contact</button>
+            <button class="btnIcon" onclick="openLink('https://www.facebook.com/nhuyenhhuy2109/')"><img class="ic" src="img/icon_fb.png" alt=""/></button>
+            <button class="btnIcon" onclick="call()"><img class="ic" src="img/icon_call.png" alt=""/></button>
+            <button class="btnIcon" onclick="openLink()"><img class="ic" src="img/icon_ig.png" alt=""/></button>
+            <button class="btnIcon" onclick="openLink('https://soundcloud.com/huy-nguy-n-828348704?ref=clipboard&p=i&c=1&si=5220B37D767D4EDEA90800AF9F10DD14&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing')"><img class="ic" src="img/icon_sc.png" alt=""/></button>
+        </section>
+        <section id="about" class="content active">
+            <div class="blog_about">   
+                <div class="text_about">
+                    <h1>about me</h1>
+                    <p>Hello everyone my name is Nguyen Huy, i'm live in Ha Noi city.This is my born,
+                i love HaNoi.I'm Intern Designer and Front End Developer from Ha Noi,VietNam.</p>
+                    <br>
+                    <p>As a student, I’ve discovered a true passion for web development—a field that blends creativity and technology in such an exciting way.
+                The idea of turning simple concepts into interactive and visually appealing websites feels almost magical to me.
+                Every time I write a piece of code or design a user interface, I feel like I’m crafting something meaningful.
+                I enjoy experimenting with new tools and frameworks, learning how to make websites not just functional but also engaging and user-friendly.
+                Responsive design, performance optimization, and accessibility are areas I’m particularly excited to explore and improve.
+                For me, web development is more than just an academic pursuit. It’s a way to express creativity, solve problems, and bring ideas to life.
+                Each project I take on as a student is not just a learning experience but also a step closer to becoming the developer I aspire to be.</p>
+                    <button class="btntext_about" onclick="openLink('https://www.facebook.com/nhuyenhhuy2109/')">Like  </button>
+                    <button class="btntext_about" onclick="call()">Contact to me</button>
+                </div>
+                <div class="img_about">
+                    <img src="img/content_anhdoi.jpg">
+                </div>
+            </div>
+            <div>
+                <div class="bottom_about">
+                    <img src="img/dulichnb1.jpg" alt=""/>
+                    <img src="img/ODS2.jpg" alt=""/>
+                    <img src="img/Wh2.jpg" alt="alt"/>
+                    <img src="img/Haiphat.jpg" alt="">
+                    <img src="img/canhan1.jpg" alt="alt"/>
+                </div>
+            </div>
+        </section>
+        
+        <section id="featured" class="content">
+            <div class="cv">
+                <div class="f_left">
+                    <img src="img/canhan1.jpg" class="avatar">
+                    <div class="info">
+                        <h3>Contact</h3>
+                        <p>+84 0335219009</p>
+                        <h3>Email</h3>
+                        <p>nguyenhuy092102@gmail.com</p>
+                        <h3>Date Of Birth</h3>
+                        <p>21/09/2002</p>
+                        <h3>Address</h3>
+                        <p>Tổ 22, Long Biên, Long Biên, Hà Nội</p>
+                        <h3>Skill</h3>
+                        <p>kỹ năng 1</p>
+                        <p>kỹ năng 1</p>
+                        <p>kỹ năng 1</p>
+                        <p>kỹ năng 1</p>
+                        <h3>Education</h3>
+                        <h4>HaNoi University Business and Technology</h4>
+                        <p>Information technology</p>
+                    </div>
+                </div>
+                <div class="f_right">
+                    <div class="name">
+                        <h1>Nguyen Quang Huy</h1>
+                        <p>Intern FontEnd Developer</p>
+                    </div>
+                    <div class="text_right">
+                        <h3>Mục tiêu nghề nghiệp</h3>
+                        <p>I am a Frontend Developer intern with a passion for building beautiful,
+                           intuitive, and efficient user interfaces. Every day, I strive to learn and improve my programming skills,
+                           from mastering fundamental technologies like HTML, CSS, and JavaScript to exploring and applying modern frameworks such as React,...
+                           My ultimate goal is to become a professional Frontend Developer, not just working with code but also understanding how users interact with the products.
+                           I believe that combining design thinking with programming skills can help create exceptional user experiences.
+                           Currently, I am focusing on building real-world projects to enhance my skills and seeking opportunities to learn from experienced professionals in the field.
+                           I am always ready to challenge myself to achieve my goal of becoming a professional developer in the near future.</p>
+                    </div>
+                    <div class="kn_lv">
+                        <h3>Kinh nghiệp làm việc</h3>
+                    </div>
+                    <div class="ex">
+                        <h4>Tên công ty</h4>
+                        <p>Vị trí làm việc</p>
+                            <ul>
+                                <li>first</li>
+                                <li>second</li>
+                                <li>third</li>
+                            </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="portfolio" class="content">
+            <h1>Portfolio</h1>
+            <p>Content for portfolio section...</p>
+        </section>
+
+        <section id="blog" class="content">
+            <h1>Blog</h1>
+            <p>Content for blog section...</p>
+        </section>
+
+        <section id="contact" class="content">
+            <h1>Contact</h1>
+            <p>Content for contact section...</p>
+        </section>
+       
+    <script src="index.js"></script>
+    </body>
+</html>
