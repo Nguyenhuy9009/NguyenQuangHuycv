@@ -3,7 +3,438 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
 */
 /* 
+    Created on /*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
     Created on : Jan 14, 2025, 2:08:48 PM
+    Author     : Admin
+*/
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+main{
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-evenly;  
+    flex: 1;
+}
+#header{
+    width: 100%;
+    background-color: paleturquoise;
+    display: flex;
+    align-content: center;
+    height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+    border-bottom: 1px solid #ccc; 
+}
+.content{
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease-in-out; 
+}
+.content.active{
+    display: block;
+    opacity: 1;
+    z-index: 1;
+    transition: opacity 1s ease-in-out; 
+}
+.content.hidden{
+    display: block;
+    opacity: 0;
+    z-index: 0;
+    position: absolute;
+}
+.content{
+    min-height: 150vh;
+    padding: 20px;
+    box-sizing: border-box;
+}
+.btnHeader{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: paleturquoise;
+    font-size: 18px;
+    justify-content: space-around;
+    width: 18%;
+    font-family: 'Times New Roman',sans-serif;
+}
+.btnHeader:hover{
+    background-color: ghostwhite;
+    font-weight: bolder;
+}
+.btnIcon{
+    border: none;
+    outline: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    margin: 30px 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: paleturquoise;
+}
+.ic{
+    height: 40px;
+    width: 40px;
+}
+#about{
+    width: 1200px;
+    height: auto;
+    display: block;
+    align-items: center;
+    gap: 0px;
+    padding: 5px;
+    padding-top: 100px;
+    .blog_about{
+        width: 100%;
+        height: 800px;
+        display: flex;
+        justify-content: space-evenly;
+        gap: 20px;
+        padding: 5px;
+        border-bottom: 2px solid #ccc; 
+        .text_about{
+        width: 40%;
+        padding-left: 20px;
+        h1{ font-size: 60px;
+            text-align: center;
+            font-family: inherit;
+        };
+        p{font-size: 18px};
+        };
+        .img_about{
+        width: 40%;
+        height: 700px;
+        display: flex;
+        align-content: center;
+        };
+        .btntext_about{
+        background-color: cyan;
+        cursor: pointer;
+        font-size: 14px;
+        }
+    };
+    .bottom_about{
+        width: 100%;
+        height: 250px;
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        padding-top: 30px;
+        margin-top: 20px;
+        object-fit: cover;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        img{
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border: 5px solid whitesmoke;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+    };
+}
+
+#featured{
+    width: 1200px;
+    display: block;
+    padding-top: 100px;
+    padding: 0px;
+    font-family: 'Arial',sans-serif; 
+    .cv{
+        padding-top: 100px; 
+        display: flex;
+        margin: 10px auto;
+        gap: 20px;
+        justify-content: center;
+        .f_left{
+            color: white;
+            width: 450px;
+            background-color: #2b6e73;
+            padding: 20px;
+            border-radius: 0px;
+            padding-left:100px;
+            border-bottom: 2px solid #2b6e73;
+        }
+        .f_left .avatar{
+            width: 250px;
+            height: 350px;
+            object-fit: cover;
+        }
+        .f_left .info{
+            font-size: 18px;
+        }
+        .f_right{
+            color: #2b6e73;
+            background-color: white;
+            width: 450px;
+            padding: 20px;
+            border-bottom: 2px solid #2b6e73;
+            .name{
+                padding: 20px;
+                font-size: 30px;
+            }
+            .text_right h3{
+                background-color:#2b6e73;
+                padding: 10px;
+                padding-left: 10px;
+                color: white;
+            }
+                
+            .text_right p{
+                font-size: 15px;
+            }
+            .kn_lv{
+                background-color: #2b6e73;
+                color: white;
+                padding: 1px;
+                padding-left: 10px;
+            }
+            
+        }
+    }
+    
+}
+
+
+#portfolio{
+    display: block;
+    width: 1200px;
+    padding-top: 100px;
+    background-color: white;
+    .p-top{
+        position: relative;
+        text-align: center;
+    }
+    .background-p{
+        width: 1200px;
+        max-width: 1200px;
+        display: block;
+        object-fit: cover;
+    }
+    .text-top-p{
+        position: absolute;
+        top: 20%;
+        left: 43%;
+        transform: translate(-40%, -40%);
+        color: black;
+      
+        h1{
+            font-size: 40px;
+            font-weight: bolder;
+        }
+        p{
+            font-size: 30px;
+        font-weight: bolder;
+        }
+    }
+    .btn-p{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+        position: absolute;
+        left: 12%;
+        top: 60%;
+        z-index: 1;
+    }
+    .btnPort{
+        border: none;
+        outline: none;
+        cursor: pointer;
+        width: 250px;
+        height: 450px;
+        margin: 30px 20px;
+        gap: 10px;
+        display: flex;
+        justify-content: center;
+        padding-top: 12%;
+        border-radius: 26px;
+        color: #333;
+        background-size: cover;
+        background-repeat: no-repeat;
+        font-weight: bolder;
+        font-size: 20px;
+        text-align: center;
+        cursor: pointer;
+        font-family: sans-serif;
+    }
+    .btnPort:hover{
+        border-color: #e67e22;
+        box-shadow: 0 0 10px rgba(230, 126, 34, 0.5);
+    }  
+    .bnta1{
+       background-image: url('img/anhmarketing.jpg');
+    }
+    .bnta2{
+       background-image: url('img/anhbanhang.jpg');
+    }
+    .bnta3{
+       background-image: url('img/anhtuhoc.jpg');
+    }
+    .info-container {
+        top: 135%;
+        width: 100%;
+        height: 300px;
+        position: absolute;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+        display: none; /* Ẩn mặc định */
+    }
+
+    .info-container.active {
+        display: block; /* Hiển thị khi có nội dung */
+    }
+}
+#contact{
+    display: flex;
+    width: 1200px;
+    padding-top: 100px;
+    background: mistyrose;
+    .text_contact{
+        font-size: 40px;
+        font-weight: bolder; 
+        margin-left: 50px;
+    }
+    .ct_contact{
+        font-size: 30px;
+        list-style: none;
+        margin-left: 60px;
+        a{
+        text-decoration: none;
+        color: black;
+        }
+    }
+    .contact_left{
+        display: block;
+    }
+    .contact_right{
+        display: block;
+        justify-content: center;
+    }
+    
+    .form-container {
+        margin-left: 50px;
+        width: 500px;
+        max-width: 500px;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+    .contact-form {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+/* Form group for two fields */
+    .form-group {
+        display: flex;
+        gap: 20px;
+    }
+
+/* Form field */
+    .form-field {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    label {
+        font-size: 14px;
+        font-weight: bold;
+         color: #333;
+    }
+
+    input,
+    textarea {
+        pointer-events: none;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 14px;
+        color: #333;
+    }
+
+    input:focus,
+    textarea:focus {
+        outline: none;
+        border-color: #e67e22;
+        box-shadow: 0 0 5px rgba(230, 126, 34, 0.5);
+    }
+
+    textarea {
+        resize: none;
+    }
+
+    /* Submit button */
+    .form-submit {
+        display: flex;
+        justify-content: center;
+    }
+
+    .submit-btn {
+        background-color: #b45232;
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+    }
+
+    .submit-btn:hover {
+        background-color: #9f3c20;
+    }
+    .contact-form input,
+    .contact-form textarea {
+        pointer-events: auto;
+        display: block;
+        }
+    }
+#footer{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: paleturquoise;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+
+
+
+
+
+: Jan 14, 2025, 2:08:48 PM
     Author     : Admin
 */
 html{
