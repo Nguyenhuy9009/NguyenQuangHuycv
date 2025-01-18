@@ -46,3 +46,38 @@ function call() {
     alert('Email liên hệ: nguyenhuy092102@gmail.com');
     alert('Cảm ơn bạn đã quan tâm ');
 }
+
+
+function Openjob(jobId) {
+  const infoContainer = document.getElementById("info-container");
+  let content = "";
+
+  switch (jobId) {
+    case "haiphat":
+      content = `
+        <h3>Sale Online & Marketing - Cty Hải Phát</h3>
+        <p>Tôi đã học được cách phân tích dữ liệu khách hàng và thực hiện các chiến dịch marketing hiệu quả.</p>
+      `;
+      break;
+    case "wonhome":
+      content = `
+        <h3>CSKH & Sale - Wonhome & Owndays</h3>
+        <p>Kinh nghiệm chăm sóc khách hàng và quản lý bán hàng tại cửa hàng.</p>
+      `;
+      break;
+    case "owndays":
+      content = `
+        <h3>Intern Front-End</h3>
+        <p>Học cách xây dựng và phát triển giao diện người dùng với các công nghệ hiện đại như HTML, CSS và JavaScript.</p>
+      `;
+      break;
+    default:
+      content = "<p>Không tìm thấy thông tin phù hợp.</p>";
+  }
+
+  // Cập nhật nội dung vào vùng thông tin
+  infoContainer.innerHTML = content;
+
+  // Hiển thị vùng thông tin
+  infoContainer.classList.add("active");
+}
