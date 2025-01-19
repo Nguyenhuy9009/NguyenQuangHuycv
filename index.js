@@ -48,36 +48,15 @@ function call() {
 }
 
 
-function Openjob(jobId) {
-  const infoContainer = document.getElementById("info-container");
-  let content = "";
+function Openjob(job) {
+  // Ẩn tất cả các nội dung trước
+  const contents = document.querySelectorAll(".info-content");
+  contents.forEach((content) => (content.style.display = "none"));
 
-  switch (jobId) {
-    case "haiphat":
-      content = `
-        <h3>Sale Online & Marketing - Cty Hải Phát</h3>
-        <p>Tôi đã học được cách phân tích dữ liệu khách hàng và thực hiện các chiến dịch marketing hiệu quả.</p>
-      `;
-      break;
-    case "wonhome":
-      content = `
-        <h3>CSKH & Sale - Wonhome & Owndays</h3>
-        <p>Kinh nghiệm chăm sóc khách hàng và quản lý bán hàng tại cửa hàng.</p>
-      `;
-      break;
-    case "owndays":
-      content = `
-        <h3>Intern Front-End</h3>
-        <p>Học cách xây dựng và phát triển giao diện người dùng với các công nghệ hiện đại như HTML, CSS và JavaScript.</p>
-      `;
-      break;
-    default:
-      content = "<p>Không tìm thấy thông tin phù hợp.</p>";
+  // Hiển thị nội dung tương ứng
+  const selectedContent = document.getElementById(`info-${job}`);
+  if (selectedContent) {
+    selectedContent.style.display = "block";
   }
-
-  // Cập nhật nội dung vào vùng thông tin
-  infoContainer.innerHTML = content;
-
-  // Hiển thị vùng thông tin
-  infoContainer.classList.add("active");
 }
+
