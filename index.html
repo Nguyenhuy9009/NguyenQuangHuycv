@@ -4,13 +4,13 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to c
 Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this template
 -->
 <html>
-    <head>
+<head>
         <title>Web cá nhân của tôi</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" href="index.css">
-    </head>
-    <body>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>  
     <header id="header">
         <img class="logo" src="img/logoH.jpg">
             <button class="btnHeader" onclick="Openpage('about')" id="show">About</button>
@@ -118,15 +118,27 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
                 <p>Những công việc tôi từng làm và kinh nghiệm tôi có được từ đó</p>
                 </div>
                 <div class="btn-p">
-                    <button class="btnPort bnta1" onclick="Openjob('haiphat')">Sale Online & Marketing<br>At<br>Cty Hải Phát</button>
-                    <button class="btnPort bnta2" onclick="Openjob('wonhome')">CSKH & sale at the store<br>At<br>Wonhome & Owndays</button>
+                    <button class="btnPort bnta1" onclick="Openjob('haiphat')">Sale Online & Marketing<br> - <br>Cty Hải Phát</button>
+                    <button class="btnPort bnta2" onclick="Openjob('wonhome')">CSKH & sale at the store<br> - <br>Wonhome & Owndays</button>
                     <button class="btnPort bnta3" onclick="Openjob('owndays')">Intern Front-End</button>
                 </div>
-                <div class="info-container" id="info-container">
-                    
+                <div id="info-container">                    
+                    <div id="info-haiphat" class="info-content">
+                        <p>Sale Online & Marketing</p>Cty Hải Phát<br>
+                        <p>Tôi đã học được cách phân tích dữ liệu khách hàng và thực hiện các chiến dịch marketing hiệu quả.</p>
+                    </div>
+
+                    <div id="info-wonhome" class="info-content">
+                        <p>CSKH & Sale</p> Wonhome & Owndays<br>
+                        <p>Kinh nghiệm chăm sóc khách hàng và quản lý bán hàng tại cửa hàng.</p>
+                    </div>
+
+                    <div id="info-owndays" class="info-content">
+                        <p>Intern Front-End</p><br>
+                        <p>Học cách xây dựng và phát triển giao diện người dùng với các công nghệ hiện đại như HTML, CSS và JavaScript.</p>
+                    </div>
                 </div>
-            </div>
-            
+            </div>            
         </section>
 
         <section id="contact" class="content">
@@ -172,5 +184,5 @@ Click nbfs://nbhost/SystemFileSystem/Templates/Other/html.html to edit this temp
     <footer id="footer">
         <h2>©2025 design by me.</h2>
     </footer>
-    </body>
+</body>
 </html>
